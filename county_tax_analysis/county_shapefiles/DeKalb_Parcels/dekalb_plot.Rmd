@@ -1,0 +1,62 @@
+---
+title: "dekalb_shp_plots"
+output: html_document
+date: '2022-06-14'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+We are plotting the DeKalb County shapefile to figure out if it's accurate and whether we need to follow up on it. 
+
+First, loading/installing packages.
+
+```{r}
+
+install.packages("rgdal")
+install.packages("sf")
+library(rgdal)
+library(tidyverse)
+library(janitor)
+library(tidycensus)
+library(ggplot2)
+library(sf)
+
+```
+
+## Including Plots
+
+```{r}
+
+dekalb_shapefile <- st_read("Dekalb_Parcels.shp")
+
+```
+
+```{r}
+
+dekalb_shapefile %>% ggplot() + 
+  geom_sf() + 
+  theme_minimal()
+
+library(tigris)
+counties <- counties() 
+
+dekalb_county <- counties %>%
+  filter(COUNTYFP == "089", STATEFP == "13")
+
+dekalb_county %>%
+  ggplot() + 
+  geom_sf() + 
+  theme_minimal()
+
+ggplot() + 
+  geom_sf(data=dekalb_county) + 
+  geom_sf(data=dekalb_shapefile) +
+  theme_minimal()
+
+```
+
+
