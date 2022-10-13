@@ -1,0 +1,728 @@
+City,State,Type of LEA,Agency,Vendor
+Detroit,MI,Police,Detroit Police Department,DataWorks Plus
+Los Angeles,CA,Sheriff,Los Angeles County Sheriff's Department,DataWorks Plus
+Auburn,CA,Sheriff,Placer County Sheriff's Office,DataWorks Plus
+Riverside,CA,Sheriff,Riverside County Sheriff's Department,NA
+San Bernardino,CA,Sheriff,San Bernardino County Sheriff's Department,NA
+Miami,FL,Police,Miami-Dade Police Department,DataWorks Plus
+North Chesterfield,VA,Police,Virginia State Police,DataWorks Plus
+Marietta,GA,Police,Cobb County Police Department,NA
+Raleigh,NC,Police,Raleigh Police Department,DataWorks Plus
+Redwood,CA,Sheriff,San Mateo County Sheriff's Office,Clearview AI
+DeLand,FL,Sheriff,Volusia County Sheriff's Office,Clearview AI
+Gainesville,FL,Police,Gainesville Police Department,Clearview AI
+Antioch,CA,Police,Antioch Police Department,Clearview AI
+Green Bay,WI,Police,Green Bay Police Department,Clearview AI
+Davie,FL,Police,Davie Police Department,Clearview AI
+Miami,FL,Police,Miami Police Department,Clearview AI
+Atlanta,GA,Police,Atlanta Police Department,Clearview AI
+Wyomissing,PA,Police,Wyomissing Police Department,Clearview AI
+Chicago,IL,Police,Chicago Police Department,DataWorks Plus
+Senoia,GA,Police,Senoia Police Department,Clearview AI
+Indianapolis,IN,Police,Indiana State Police,Clearview AI
+Albany,NY,Police,New York State Police,Clearview AI
+Austin,TX,State Police,Texas Department of Public Safety,Clearview AI
+Durham,NC,Police,Durham Police Department,DataWorks Plus
+Honolulu,HI,Police,Honolulu Police Department,Idemia
+Hilo,HI,Police,Hawaii County Police Department,Idemia
+Līhu‘e,HI,Police,Kauai County Police Department,Idemia
+Wailuku,HI,Police,Maui County Police Department,Idemia
+Albuquerque,NM,Police,Albuquerque Police Department,Idemia
+Harrisburg,PA,State Police,Pennsylvania Justice Network,Idemia
+Tacoma,WA,Police,Pierce County Police Department,Idemia
+London,OH,State Police,Ohio Bureau of Criminal Investigation,NEC
+Lakewood,CO,State Police,Colorado Bureau of Investigation,Idemia
+Dover,DE,Police,Delaware State Police,Idemia
+Coral Springs,FL,Police,Coral Springs Police Department,Clearview AI
+Fort Lauderdale,FL,Sheriff,Broward County Sheriff's Office,Clearview AI
+Irving,TX,Police,Irving Police Department,NEC
+DeSoto,TX,Police,DeSoto Police Department,NEC
+Grand Prairie,TX,Police,Grand Prairie Police Department,NEC
+San Antonio,TX,Sheriff,Bexar County Sheriff's Office,NEC
+North Charleston,SC,Sheriff,Charleston County Sheriff's Office,DataWorks Plus
+Annapolis,MD,State Police,Anne Arundel County Sheriff's Office,NA
+Millersville,MD,Police,Maryland State Police,NA
+Towson,MD,Police,Baltimore County Police Department,NA
+Westminster,MD,Sheriff,Carroll County Sheriff's Office,NA
+Ellicott City,MD,Police,Howard County Police Department,NA
+Edgewood,MD,Sheriff,Harford County Sheriff's Office,NA
+Towson,MD,State Police,Maryland Department of Public Safety and Correctional Services,NA
+Minneapolis,MN,Sheriff,Hennepin County Sheriff's Office,NA
+St. Paul,MN,Police,Minnesota Bureau of Criminal Apprehension,Clearview AI
+St. Paul,MN,Police,St. Paul Police Department,Clearview AI
+Prior Lake,MN,Police,Prior Lake Police Department,Clearview AI
+New York City,NY,Police,New York Police Department,"Idemia, Dataworks Plus"
+Pasadena,CA,Police,Pasadena Police Department,"Vigilant Solutions, Dataworks"
+Gainesville,FL,Sheriff,Alachua County Sheriff's Office,Idemia
+Altamonte Springs,FL,Police,Altamonte Springs Police Department,Idemia
+Apopka,FL,Police,Apopka Police Department,Idemia
+Atlantic Beach,FL,Police,Atlantic Beach Police Department,Idemia
+Atlantis,FL,Police,Atlantis Police Department,Idemia
+Auburndale,FL,Police,Auburndale Police Department,Idemia
+Aventura,FL,Police,Aventura Police Department,Idemia
+MacClenny,FL,Sheriff,Baker County Sheriff's Office,Idemia
+Bartow,FL,Police,Bartow Police Department,Idemia
+Panama City,FL,Sheriff,Bay County Sheriff's Office,Idemia
+Bay Harbor Islands,FL,Police,Bay Harbor Islands Police Department,Idemia
+Belle Isle,FL,Police,Belle Isle Police Department,Idemia
+Boca Raton,FL,Police,Boca Raton Police Department,Idemia
+Boynton Beach,FL,Police,Boynton Beach Police Department,Idemia
+Bradenton,FL,Police,Bradenton Police Department,Idemia
+Titusville,FL,Sheriff,Brevard County Sheriff's Office,Idemia
+Fort Lauderdale,FL,Sheriff,Broward County Sheriff's Office,Idemia
+Bunnell,FL,Police,Bunnell Police Department,Idemia
+Blountstown,FL,Sheriff,Calhoun County Sheriff's Office,Idemia
+Cape Coral,FL,Police,Cape Coral Police Department,Idemia
+Casselberry,FL,Police,Casselberry Police Department,Idemia
+Punta Gorda,FL,Sheriff,Charlotte County Sheriff's Office,Idemia
+Chiefland,FL,Police,Chiefland Police Department,Idemia
+Inverness,FL,Sheriff,Citrus County Sheriff's Office,Idemia
+Green Cove Springs,FL,Sheriff,Clay County Sheriff's Office,Idemia
+Clearwater,FL,Police,Clearwater Police Department,Idemia
+Clermont,FL,Police,Clermont Police Department,Idemia
+Clewiston,FL,Police,Clewiston Police Department,Idemia
+Cocoa Beach,FL,Police,Cocoa Beach Police Department,Idemia
+Cocoa,FL,Police,Cocoa Police Department,Idemia
+Coconut Creek,FL,Police,Coconut Creek Police Department,Idemia
+Naples,FL,Sheriff,Collier County Sheriff's Office,Idemia
+Lake City,FL,Sheriff,Columbia County Sheriff's Office,Idemia
+Coral Gables,FL,Police,Coral Gables Police Department,Idemia
+Coral Springs,FL,Police,Coral Springs Police Department,Idemia
+Crestview,FL,Police,Crestview Police Department,Idemia
+Davie,FL,Police,Davie Police Department,Idemia
+Daytona Beach,FL,Police,Daytona Beach Police Department,Idemia
+Daytona Beach Shores,FL,Police,Daytona Beach Shores Department of Public Safety,Idemia
+Delray Beach,FL,Police,Delray Beach Police Department,Idemia
+DeLand,FL,Police,DeLand Police Department,Idemia
+Arcadia,FL,Sheriff,Desoto County Sheriff's Office,Idemia
+Doral,FL,Police,Doral Police Department,Idemia
+Eatonville,FL,Police,Eatonville Police Department,Idemia
+Edgewater,FL,Police,Edgewater Police Department,Idemia
+Edgewood,FL,Police,Edgewood Police Department,Idemia
+Pensacola,FL,Sheriff,Escambia County Sheriff's Office,Idemia
+Eustis,FL,Police,Eustis Police Department,Idemia
+Fellsmere,FL,Police,Fellsmere Police Department,Idemia
+Fernandina Beach,FL,Police,Fernandina Beach Police Department,Idemia
+Flagler Beach,FL,Police,Flagler Beach Police Department,Idemia
+Bunnell,FL,Sheriff,Flagler County Sheriff's Office,Idemia
+Boca Raton,FL,Police,Florida Atlantic University Police Department,Idemia
+Florida City,FL,Police,Florida City Police Department,Idemia
+Tallahassee,FL,State Police,Florida Department of Business and Professional Regulation,Idemia
+Tallahassee,FL,State Police,Florida Department of Corrections,Idemia
+Tallahassee,FL,State Police,Florida Department of Law Enforcement,Idemia
+Tallahassee,FL,State Police,Florida Department of Legal Affairs,Idemia
+Tallahassee,FL,State Police,Florida Fish and Wildlife Commission,Idemia
+Tallahassee,FL,State Police,Florida Highway Patrol,Idemia
+Tallahassee,FL,State Police,Florida Lottery Division of Security,Idemia
+Tallahassee,FL,State Police,Florida State Fire Marshal's Office,Idemia
+Fort Myers,FL,Police,Fort Myers Police Department,Idemia
+Fort Walton Beach,FL,Police,Fort Walton Beach Police Department,Idemia
+Fruitland Park,FL,Police,Fruitland Park Police Department,Idemia
+Fort Lauderdale,FL,Police,Fort Lauderdale Police Department,Idemia
+Fort Pierce,FL,Police,Fort Pierce Police Department,Idemia
+Gainesville,FL,Police,Gainesville Police Department,Idemia
+Moore Haven,FL,Sheriff,Glades County Sheriff's Office,Idemia
+Greenacres,FL,Police,Greenacres Department of Public Safety,Idemia
+Gretna,FL,Police,Gretna Police Department,Idemia
+Groveland,FL,Police,Groveland Police Department,Idemia
+Gulf Breeze,FL,Police,Gulf Breeze Police Department,Idemia
+Gulfport,FL,Police,Gulfport Police Department,Idemia
+Haines City,FL,Police,Haines City Police Department,Idemia
+Hallandale Beach,FL,Police,Hallandale Beach Police Department,Idemia
+Wauchula,FL,Sheriff,Hardee County Sheriff's Office,Idemia
+LaBelle,FL,Sheriff,Hendry County Sheriff's Office,Idemia
+Brooksville,FL,Sheriff,Hernando County Sheriff's Office,Idemia
+Hialeah,FL,Police,Hialeah Police Department,Idemia
+Sebring,FL,Sheriff,Highlands County Sheriff's Office,Idemia
+Tampa,FL,Sheriff,Hillsborough County Sheriff's Office,Idemia
+Hollywood,FL,Police,Hollywood Police Department,Idemia
+Holmes Beach,FL,Police,Holmes Beach Police Department,Idemia
+Bonifay,FL,Sheriff,Holmes County Sheriff's Office,Idemia
+Homestead,FL,Police,Homestead Police Department,Idemia
+Indialantic,FL,Police,Indialantic Police Department,Idemia
+Indian Harbour Beach,FL,Police,Indian Harbour Beach Police Department,Idemia
+Vera Beach,FL,Sheriff,Indian River County Sheriff's Office,Idemia
+Indian River Shores,FL,Police,Indian River Shores Public Safety Department,Idemia
+Marianna,FL,Sheriff,Jackson County Sheriff's Office,Idemia
+Jacksonville Beach,FL,Police,Jacksonville Beach Police Department,Idemia
+Jacksonville,FL,Police,Florida Department of Law Enforcement - Jacksonville Regional Operations Center,Idemia
+Jacksonville,FL,Sheriff,Jacksonville Sheriffs Office,Idemia
+Monticello,FL,Sheriff,Jefferson County Sheriff's Office,Idemia
+Jupiter,FL,Police,Jupiter Police Department,Idemia
+Key West,FL,Police,Key West Police Department,Idemia
+Kissimmee,FL,Police,Kissimmee Police Department,Idemia
+Lady Lake,FL,Police,Lady Lake Police Department,Idemia
+Tavares,FL,Sheriff,Lake County Sheriff's Office,Idemia
+Lake Mary,FL,Police,Lake Mary Police Department,Idemia
+Lake Wales,FL,Police,Lake Wales Police Department,Idemia
+Lakeland,FL,Police,Lakeland Police Department,Idemia
+Lantana,FL,Police,Lantana Police Department,Idemia
+Largo,FL,Police,Largo Police Department,Idemia
+Lauderhill,FL,Police,Lauderhill Police Department,Idemia
+Fort Myers,FL,Sheriff,Lee County Sheriff's Office,Idemia
+Leesburg,FL,Police,Leesburg Police Department,Idemia
+Tallahassee,FL,Sheriff,Leon County Sheriff's Office,Idemia
+Bronson,FL,Sheriff,Levy County Sheriff's Office,Idemia
+Lighthouse Point,FL,Police,Lighthouse Point Police Department,Idemia
+Live Oak,FL,Police,Live Oak Police Department,Idemia
+Longwood,FL,Police,Longwood Police Department,Idemia
+Lynn Haven,FL,Police,Lynn Haven Police Department,Idemia
+Madison,FL,Sheriff,Madison County Sheriff's Office,Idemia
+Madison,FL,Police,Madison Police Department,Idemia
+Maitland,FL,Police,Maitland Police Department,Idemia
+Bradenton,FL,Sheriff,Manatee County Sheriff's Office,Idemia
+Margate,FL,Police,Margate Police Department,Idemia
+Marianna,FL,Police,Marianna Police Department,Idemia
+Ocala,FL,Sheriff,Marion County Sheriff's Office,Idemia
+Stuart,FL,Sheriff,Martin County Sheriff's Office,Idemia
+Mascotte,FL,Police,Mascotte Police Department,Idemia
+Medley,FL,Police,Medley Police Department,Idemia
+Melbourne,FL,Police,Melbourne Police Department,Idemia
+Miami Beach,FL,Police,Miami Beach Police Department,Idemia
+Miami Gardens,FL,Police,Miami Gardens Police Department,Idemia
+Miami,FL,Police,Miami Police Department,Idemia
+Miami Shores,FL,Police,Miami Shores Police Department,Idemia
+Miami Springs,FL,Police,Miami Springs Police Department,Idemia
+Miami-Dade,FL,Police,Miami-Dade Police Department,Idemia
+Miami-Dade Schools,FL,Police,Miami-Dade Schools Police Department,Idemia
+Miramar,FL,Police,Miramar Police Department,Idemia
+Key West,FL,Sheriff,Monroe County Sheriff's Office,Idemia
+Mount Dora,FL,Police,Mount Dora Police Department,Idemia
+Naples,FL,Police,Naples Police Department,Idemia
+Yulee,FL,Sheriff,Nassau County Sheriff's Office,Idemia
+Neptune Beach,FL,Police,Neptune Beach Police Department,Idemia
+New Port Richey,FL,Police,New Port Richey Police Department,Idemia
+New Smyrna Beach,FL,Police,New Smyrna Beach Police Department,Idemia
+Niceville,FL,Police,Niceville Police Department,Idemia
+North Bay Village,FL,Police,North Bay Village Police Department,Idemia
+North Miami Beach,FL,Police,North Miami Beach Police Department,Idemia
+North Miami,FL,Police,North Miami Police Department,Idemia
+North Palm Beach,FL,Police,North Palm Beach Police Department,Idemia
+North Port,FL,Police,North Port Police Department,Idemia
+Oakland,FL,Police,Oakland Police Department,Idemia
+Ocala,FL,Police,Ocala Police Department,Idemia
+Ocean Ridge,FL,Police,Ocean Ridge Police Department,Idemia
+Ocoee,FL,Police,Ocoee Police Department,Idemia
+Shalimar,FL,Sheriff,Okaloosa County Sheriff's Office,Idemia
+Okeechobee,FL,Sheriff,Okeechobee County Sheriff's Office,Idemia
+Okeechobee,FL,Police,Okeechobee Police Department,Idemia
+Orange City,FL,Police,Orange City Police Department,Idemia
+Orlando,FL,Sheriff,Orange County Sheriff's Office,Idemia
+Orange Park,FL,Police,Orange Park Police Department,Idemia
+Orlando,FL,Police,Orlando Police Department,Idemia
+Ormond Beach,FL,Police,Ormond Beach Police Department,Idemia
+Kissimmee,FL,Sheriff,Osceola County Sheriff's Office,Idemia
+Oviedo,FL,Police,Oviedo City Police Department,Idemia
+Palatka,FL,Police,Palatka Police Department,Idemia
+Palm Bay,FL,Police,Palm Bay Police Department,Idemia
+West Palm Beach,FL,Sheriff,Palm Beach County Sheriff's Office,Idemia
+Palm Beach Gardens,FL,Police,Palm Beach Gardens Police Department,Idemia
+Palm Beach,FL,Police,Palm Beach Police Department,Idemia
+Palm Beach,FL,Police,Palm Beach Regional Fusion Center,Idemia
+Palm Beach Shores,FL,Police,Palm Beach Shores Police Department,Idemia
+Palm Springs,FL,Police,Palm Springs Police Department,Idemia
+Palmetto,FL,Police,Palmetto Police Department,Idemia
+Panama City Beach,FL,Police,Panama City Beach Police Department,Idemia
+Panama City,FL,Police,Panama City Police Department,Idemia
+Parker,FL,Police,Parker Police Department,Idemia
+New Port Richey,FL,Sheriff,Pasco County Sheriff's Office,Idemia
+Pembroke Pines,FL,Police,Pembroke Pines Police Department,Idemia
+Pensacola,FL,Police,Pensacola Police Department,Idemia
+Pinecrest,FL,Police,Pinecrest Police Department,Idemia
+Pinellas Park,FL,Police,Pinellas Park Police Department,Idemia
+Largo,FL,Sheriff,Pinellas County Sheriff's Office,Idemia
+Plant City,FL,Police,Plant City Police Department,Idemia
+Plantation,FL,Police,Plantation Police Department,Idemia
+Winter Haven,FL,Sheriff,Polk County Sheriff's Office,Idemia
+Port Orange,FL,Police,Port Orange Police Department,Idemia
+Port St. Lucie,FL,Police,Port St. Lucie Police Department,Idemia
+Punta Gorda,FL,Police,Punta Gorda Police Department,Idemia
+Palatka,FL,Sheriff,Putnam County Sheriff's Office,Idemia
+Quincy,FL,Police,Quincy Police Department,Idemia
+Riviera Beach,FL,Police,Riviera Beach Police Department,Idemia
+Rockledge,FL,Police,Rockledge Police Department,Idemia
+Sanford Airport,FL,Police,Sanford Airport Police Department,Idemia
+Sanford,FL,Police,Sanford Police Department,Idemia
+Sanibel,FL,Police,Sanibel Police Department,Idemia
+Milton,FL,Sheriff,Santa Rosa County Sheriff's Office,Idemia
+Sarasota,FL,Sheriff,Sarasota County Sheriff's Office,Idemia
+Sarasota,FL,Police,Sarasota Police Department,Idemia
+Sebastian,FL,Police,Sebastian Police Department,Idemia
+Sebring,FL,Police,Sebring Police Department,Idemia
+Sanford,FL,Sheriff,Seminole County Sheriff's Office,Idemia
+Seminole,FL,Police,Seminole Police Department,Idemia
+South Daytona,FL,Police,South Daytona Police Department,Idemia
+South Miami,FL,Police,South Miami Police Department,Idemia
+St. Augustine,FL,Police,St. Augustine Police Department,Idemia
+St. Cloud,FL,Police,St. Cloud Police Department,Idemia
+St. Augustine,FL,Sheriff,St. Johns County Sheriff's Office,Idemia
+Fort Pierce,FL,Sheriff,St. Lucie County Sheriff's Office,Idemia
+St. Petersburg,FL,Police,St. Petersburg Police Department,Idemia
+Starke,FL,Police,Starke Police Department,Idemia
+Stuart,FL,Police,Stuart Police Department,Idemia
+Wildwood,FL,Sheriff,Sumter County Sheriff's Office,Idemia
+Sunny Isles Beach,FL,Police,Sunny Isles Beach Police Department,Idemia
+Sunrise,FL,Police,Sunrise Police Department,Idemia
+Surfside,FL,Police,Surfside Police Department,Idemia
+Live Oak,FL,Sheriff,Suwannee County Sheriff's Office,Idemia
+Tallahassee,FL,Police,Tallahassee Community College Police Department,Idemia
+Tallahassee,FL,Police,Tallahassee Police Department,Idemia
+Tampa,FL,Police,Tampa International Airport Police,Idemia
+Tampa,FL,Police,Tampa Police Department,Idemia
+Tarpon Springs,FL,Police,Tarpon Springs Police Department,Idemia
+Temple Terrace,FL,Police,Temple Terrace Police Department,Idemia
+Tequesta,FL,Police,Tequesta Police Department,Idemia
+Titusville,FL,Police,Titusville Police Department,Idemia
+Umatilla,FL,Police,Umatilla Police Department,Idemia
+Orlando,FL,Police,University of Central Florida Police Department,Idemia
+Gainesville,FL,Police,University of Florida Police Department,Idemia
+Miami,FL,Police,University of Miami Police Department,Idemia
+Jacksonville,FL,Police,University of North Florida Police Department,Idemia
+Tampa,FL,Police,University of South Florida Police Department,Idemia
+Venice,FL,Police,Venice Police Department,Idemia
+Vero Beach,FL,Police,Vero Beach Police Department,Idemia
+Palmetto Bay,FL,Police,Palmetto Bay Police Department,Idemia
+Virginia Gardens,FL,Police,Virginia Gardens Police Department,Idemia
+Deland,FL,Sheriff,Volusia County Sheriff's Office,Idemia
+Crawfordville,FL,Sheriff,Wakulla County Sheriff's Office,Idemia
+DeFuniak,FL,Sheriff,Walton County Sheriff's Office,Idemia
+Wauchula,FL,Police,Wauchula Police Department,Idemia
+West Melbourne,FL,Police,West Melbourne Police Department,Idemia
+West Miami,FL,Police,West Miami Police Department,Idemia
+West Palm Beach,FL,Police,West Palm Beach Police Department,Idemia
+Williston,FL,Police,Williston Police Department,Idemia
+Wilton Manors,FL,Police,Wilton Manors Police Department,Idemia
+Windermere,FL,Police,Windermere Police Department,Idemia
+Winter Gardens,FL,Police,Winter Garden Police Department,Idemia
+Winter Haven,FL,Police,Winter Haven Police Department,Idemia
+Winter Park,FL,Police,Winter Park Police Department,Idemia
+Winter Springs,FL,Police,Winter Springs Police Department,Idemia
+West Trenton,NJ,State Police,New Jersey State Police,Vigilant Solutions
+Wylie,TX,Police,Wylie Police Department,Vigilant Solutions
+Wichita Falls,TX,Police,Wichita Falls Police Department,Vigilant Solutions
+Burr Ridge,IL,Police,Burr Ridge Police Department,Vigilant Solutions
+Dimondale,MI,State Police,Michigan State Police,NA
+St. Paul,MN,State Police,Minnesota Department of Public Safety,NA
+Austin,TX,State Police,Texas Department of Public Safety,NA
+Salt Lake City,UT,State Police,Utah Department of Public Safety,NA
+Chino,CA,Police,Chino Police Department,AFR Engine
+Los Angeles,CA,Police,Los Angeles Police Department,DataWorks Plus
+Las Vegas,NV,Police,Las Vegas Metropolitan Police Department,Vigilant Solutions
+Anaheim,CA,Police,Anaheim Police Department,Veritone
+Long Beach,CA,Police,Long Beach Police Department,NA
+Allendale,MI,Police,Grand Valley State University Department of Public Safety,Avigilon
+Los Angeles,CA,Police,University of Southern California Department of Public Safety,NA
+Orange,CA,Police,Orange Police Department,NA
+Fayetteville,NC,Police,Fayetteville Police Department,Clearview AI
+Mont Belvieu,TX,Police,Barber's Hill Independent School District Police Department,Anyvision
+Laredo,TX,Sheriff,Webb County Sheriff's Office,"Turn-Key Mobile, Inc."
+Houston,TX,Sheriff,Harris County Sheriff's Office,IDEMIA
+Plano,TX,Police,Plano Police Department,Vigilant Solutions
+Indianapolis,IN,Police,Indianapolis Metropolitan Police Department,Vigilant Solutions
+Orange,NJ,Police,South Orange Police Department,Verkada
+Adrian,MI,Police,Adrian Police Department,NA
+Adrian Township,MI,Police,Adrian Township Police Department,NA
+Albion,MI,Police,Albion Department Of Public Safety,NA
+Harrisville,MI,Sheriff,Alcona County Sheriff's Office,NA
+Munising,MI,Sheriff,Alger County Sheriff's Office,NA
+Allegan,MI,Sheriff,Allegan County Sheriff's Office,NA
+Allegan,MI,Police,Allegan Police Department,NA
+Allen Park,MI,Police,Allen Park Police Department,NA
+Alma,MI,Police,Alma Police Department,NA
+Almont,MI,Police,Almont Police Department,NA
+Alpena,MI,Sheriff,Alpena County Sheriff's Office,NA
+Alpena,MI,Police,Alpena Police Department,NA
+Ann Arbor,MI,Police,Ann Arbor Police Department,NA
+Bellaire,MI,Sheriff,Antrim County Sheriff's Office,NA
+Argentine Township,MI,Police,Argentine Township Police Department,NA
+Armada,MI,Police,Armada Police Department,NA
+Auburn Hills,MI,Police,Auburn Hills Police Department,NA
+Bangor,MI,Police,Bangor Police Department,NA
+Bridgman,MI,Police,Baroda/Lake Township Police Department,NA
+Hastings,MI,Sheriff,Barry County Sheriff's Office,NA
+Delton,MI,Police,Barry Township Police Department,NA
+Barryton,MI,Police,Barryton Police Department,NA
+Bath Township,MI,Police,Bath Township Police Department,NA
+Battle Creek,MI,Police,Battle Creek Police Department,NA
+Bay City,MI,Police,Bay City Department Of Public Safety,NA
+Brimley,MI,Police,Bay Mills Police Department,NA
+Belding,MI,Police,Belding Police Department,NA
+Belleville,MI,Police,Belleville Police Department,NA
+Benton Harbor,MI,Police,Benton Charter Township Police Department,NA
+Benton Harbor,MI,Police,Benton Harbor Department Of Public Safety,NA
+Berkley,MI,Police,Berkley Department Of Public Safety,NA
+Benton Harbor,MI,Sheriff,Berrien County Sheriff's Office,NA
+Berrien Springs,MI,Police,Berrien Springs Oronoko Township Police Department,NA
+Beverly Hills,MI,Police,Beverly Hills Department Of Public Safety,NA
+Birch Run,MI,Police,Birch Run Police Department,NA
+Birmingham,MI,Police,Birmingham Police Department,NA
+Flint,MI,Police,Bishop International Airport Authority Department of Public Safety,NA
+Jackson,MI,Police,Blackman-Leoni Township Department of Public Safety,NA
+Blissfield,MI,Police,Blissfield Police Department,NA
+Bloomfield Hills,MI,Police,Bloomfield Hills Department of Public Safety,NA
+Bloomfield Township,MI,Police,Bloomfield Township Police Department,NA
+Coldwater,MI,Sheriff,Branch County Sheriff's Office,NA
+Bridgeport Township,MI,Police,Bridgeport Township Police Department,NA
+Brighton,MI,Police,Brighton Police Department,NA
+Buchanan,MI,Police,Buchanan Police Department,NA
+Buena Vista,MI,Police,Buena Vista Township Police Department,NA
+Burton,MI,Police,Burton Police Department,NA
+Cadillac,MI,Police,Cadillac Police Department,NA
+Battle Creek,MI,Sheriff,Calhoun County Sheriff's Office,NA
+Capac,MI,Police,Capac Police Department,NA
+Carleton,MI,Police,Carleton Police Department,NA
+Caro,MI,Police,Caro Police Department,NA
+Carrollton Township,MI,Police,Carrollton Township Police Department,NA
+Cassopolis,MI,Sheriff,Cass County Sheriff's Office,NA
+Mount Pleasant,MI,Police,Central Michigan University Police Department,NA
+Charlevoix,MI,Sheriff,Charlevoix County Sheriff's Office,NA
+Charlevoix,MI,Police,Charlevoix Police Department,NA
+Charlotte,MI,Police,Charlotte Police Department,NA
+Cheboygan,MI,Sheriff,Cheboygan County Sheriff's Office,NA
+Cheboygan,MI,Police,Cheboygan Department Of Public Safety,NA
+Chelsea,MI,Police,Chelsea Police Department,NA
+Chesaning,MI,Police,Chesaning Police Department,NA
+Chesterfield Township,MI,Police,Chesterfield Township Police Department,NA
+Sault Sainte Marie,MI,Sheriff,Chippewa County Sheriff's Office,NA
+Chocolay Charter Township,MI,Police,Chocolay Township Police Department,NA
+Harrison,MI,Sheriff,Clare County Sheriff's Office,NA
+Clare,MI,Police,Clare Police Department,NA
+Clay Township,MI,Police,Clay Township Police Department,NA
+Clayton Township,MI,Police,Clayton Township Police Department,NA
+Saint Johns,MI,Sheriff,Clinton County Sheriff's Office,NA
+Clinton,MI,Police,Clinton Police Department,NA
+Clinton Township,MI,Police,Clinton Township Police Department,NA
+Clio,MI,Police,Clio Police Department,NA
+Ferndale,MI,Police,CN North America Railroad Police,NA
+Coldwater,MI,Police,Coldwater Police Department,NA
+Coloma Township,MI,Police,Coloma Township Police Department,NA
+Colon,MI,Police,Colon Police Department,NA
+Columbia Township,MI,Police,Columbia Township Police Department,NA
+Corunna,MI,Police,Corunna Police Department,NA
+Grayling,MI,Sheriff,Crawford County Sheriff's Office,NA
+Croswell,MI,Police,Croswell Police Department,NA
+Livonia,MI,Police,CSX Transport Railroad Police,NA
+Davison,MI,Police,Davison City Police Department,NA
+Dearborn Heights,MI,Police,Dearborn Heights Police Department,NA
+Decatur,MI,Police,Decatur Police Department,NA
+Escanaba,MI,Sheriff,Delta County Sheriff's Office,NA
+Detroit,MI,Police,Detroit Police Department,NA
+Detroit,MI,Police,Detroit Public Schools Police Department,NA
+Dewitt,MI,Police,Dewitt Police Department,NA
+Iron Mountain,MI,Sheriff,Dickinson County Sheriff's Office,NA
+Dowagiac,MI,Police,Dowagiac Police Department,NA
+Dryden Township,MI,Police,Dryden Township Police Department,NA
+Dundee,MI,Police,Dundee Police Department,NA
+Durand,MI,Police,Durand Police Department,NA
+East Grand Rapids,MI,Police,East Grand Rapids Department of Public Safety,NA
+East Jordan,MI,Police,East Jordan Police Department,NA
+East Lansing,MI,Police,East Lansing Police Department,NA
+East Tawas,MI,Police,East Tawas Police Department,NA
+Ypsilanti,MI,Police,Eastern Michigan University Department of Public Safety,NA
+Eastpointe,MI,Police,Eastpointe Police Department,NA
+Charlotte,MI,Sheriff,Eaton County Sheriff's Office,NA
+Eaton Rapids,MI,Police,Eaton Rapids Police Department,NA
+Ecorse,MI,Police,Ecorse Police Department,NA
+Elk Rapids,MI,Police,Elk Rapids Police Department,NA
+Petoskey,MI,Sheriff,Emmet County Sheriff's Office,NA
+Erie Township,MI,Police,Erie Township Police Department,NA
+Escanaba,MI,Police,Escanaba Department Of Public Safety,NA
+Evart,MI,Police,Evart Police Department,NA
+Farmington,MI,Police,Farmington Department Of Public Safety,NA
+Farmington Hills,MI,Police,Farmington Hills Police Department,NA
+Fennville,MI,Police,Fennville Police Department,NA
+Fenton,MI,Police,Fenton Police Department,NA
+Ferndale,MI,Police,Ferndale Police Department,NA
+Big Rapids,MI,Police,Ferris State University Department of Public Safety,NA
+Flat Rock,MI,Police,Flat Rock Police Department,NA
+Flint,MI,Police,Flint Police Department,NA
+Flint Township,MI,Police,Flint Township Police Department,NA
+Flushing,MI,Police,Flushing Police Department,NA
+Flushing Township,MI,Police,Flushing Township Police Department,NA
+Forsyth Township,MI,Police,Forsyth Township Police Department,NA
+Frankenmuth,MI,Police,Frankenmuth Police Department,NA
+Franklin,MI,Police,Franklin-Bingham Farms Police Department,NA
+Fraser,MI,Police,Fraser Department Of Public Safety,NA
+Fremont,MI,Police,Fremont Police Department,NA
+Fruitport Township,MI,Police,Fruitport Township Police Department,NA
+Gaines Township,MI,Police,Gaines Township Police Department,NA
+Garden City,MI,Police,Garden City Police Department,NA
+Gaylord,MI,Police,Gaylord Police Department,NA
+Flint,MI,Sheriff,Genesee County Sheriff's Office,NA
+Genesee Township,MI,Police,Genesee Township Police Department,NA
+Grand Rapids,MI,Police,Gerald R Ford International Airport Police Department,NA
+Gerrish Township,MI,Police,Gerrish Township Police Department,NA
+Gibraltar,MI,Police,Gibraltar Police Department,NA
+Gladwin,MI,Sheriff,Gladwin County Sheriff's Office,NA
+Gladwin,MI,Police,Gladwin Police Department,NA
+Bessemer,MI,Sheriff,Gogebic County Sheriff's Office,NA
+Grand Blanc,MI,Police,Grand Blanc Police Department,NA
+Grand Blank Township,MI,Police,Grand Blanc Township Police Department,NA
+Grand Haven,MI,Police,Grand Haven Department Of Public Safety,NA
+Grand Ledge,MI,Police,Grand Ledge Police Department,NA
+Grand Rapids,MI,Police,Grand Rapids Police Department,NA
+Traverse City,MI,Sheriff,Grand Traverse County Sheriff's Office,NA
+Allendale,MI,Police,Grand Valley State University Department of Public Safety,NA
+Grandville,MI,Police,Grandville Police Department,NA
+Grant,MI,Police,Grant Police Department,NA
+Ithaca,MI,Sheriff,Gratiot County Sheriff's Office,NA
+Green Oak Township,MI,Police,Green Oak Township Police Department,NA
+Greenville,MI,Police,Greenville Department Of Public Safety,NA
+Grosse Ile Township,MI,Police,Grosse Ile Township Police Department,NA
+Grosse Pointe,MI,Police,Grosse Pointe Department Of Public Safety,NA
+Grosse Pointe Farms,MI,Police,Grosse Pointe Farms Department of Public Safety,NA
+Grosse Pointe Park,MI,Police,Grosse Pointe Park Department of Public Safety,NA
+Grosse Pointe Shores,MI,Police,Grosse Pointe Shores Police Department,NA
+Grosse Pointe Woods,MI,Police,Grosse Pointe Woods Department of Public Safety,NA
+Hamburg Township,MI,Police,Hamburg Township Police Department,NA
+Hampton Township,MI,Police,Hampton Township Department of Public Safety,NA
+Harris Township,MI,Police,Hannahville Tribal Police Department,NA
+Harbor Beach,MI,Police,Harbor Beach Police Department,NA
+Harbor Springs,MI,Police,Harbor Springs Police Department,NA
+Harper Woods,MI,Police,Harper Woods Police Department,NA
+Hart,MI,Police,Hart Police Department,NA
+Hastings,MI,Police,Hastings Police Department,NA
+Hazel Park,MI,Police,Hazel Park Police Department,NA
+Hillsdale,MI,Sheriff,Hillsdale County Sheriff's Office,NA
+Hillsdale,MI,Police,Hillsdale Police Department,NA
+Holland,MI,Police,Holland Police Department,NA
+Holly,MI,Police,Holly Police Department,NA
+Houghton,MI,Sheriff,Houghton County Sheriff's Office,NA
+Howell,MI,Police,Howell Police Department,NA
+Hudson,MI,Police,Hudson Police Department,NA
+Huntington Woods,MI,Police,Huntington Woods Department of Public Safety,NA
+Bad Axe,MI,Sheriff,Huron County Sheriff's Office,NA
+Huron Township,MI,Police,Huron Township Police Department,NA
+Imlay City,MI,Police,Imlay City Police Department,NA
+Mason,MI,Sheriff,Ingham County Sheriff's Office,NA
+Inkster,MI,Police,Inkster Police Department,NA
+Ionia,MI,Sheriff,Ionia County Sheriff's Office,NA
+Ionia,MI,Police,Ionia Department Of Public Safety,NA
+Tawas City,MI,Sheriff,Iosco County Sheriff's Office,NA
+Iron River,MI,Police,Iron River Police Department,NA
+Ironwood,MI,Police,Ironwood Department Of Public Safety,NA
+Mount Pleasant,MI,Sheriff,Isabella County Sheriff's Office,NA
+Ishpeming,MI,Police,Ishpeming Police Department,NA
+Ishpeming Township,MI,Police,Ishpeming Township Police Department,NA
+Jackson,MI,Sheriff,Jackson County Sheriff's Office,NA
+Jackson,MI,Police,Jackson Police Department,NA
+Kalamazoo,MI,Sheriff,Kalamazoo County Sheriff's Office,NA
+Kalamazoo,MI,Police,Kalamazoo Department Of Public Safety,NA
+Kalamazoo Township,MI,Police,Kalamazoo Township Police Department,NA
+Kalamazoo,MI,Police,Kalamazoo Valley Community College Public Safety Department,NA
+Kalkaska,MI,Police,Kalkaska Police Department,NA
+Grand Rapids,MI,Sheriff,Kent County Sheriff's Office,NA
+Kentwood,MI,Police,Kentwood Police Department,NA
+Eagle River,MI,Sheriff,Keweenaw County Sheriff's Office,NA
+Kingsford,MI,Police,Kingsford Public Safety Department,NA
+Kinross Township,MI,Police,Kinross Township Police Department,NA
+Grayling,MI,Police,Kirtland Community College Department of Public Safety,NA
+Laingsburg,MI,Police,Laingsburg Police Department,NA
+Lake Angelus,MI,Police,Lake Angelus Police Department,NA
+Baldwin,MI,Sheriff,Lake County Sheriff's Office,NA
+Lake Odessa,MI,Police,Lake Odessa Police Department,NA
+Lake Orion,MI,Police,Lake Orion Police Department,NA
+Lakeview,MI,Police,Lakeview Police Department,NA
+Lansing,MI,Police,Lansing Community College Department of Public Safety,NA
+Lansing Township,MI,Police,Lansing Township Police Department,NA
+Lapeer,MI,Sheriff,Lapeer County Sheriff's Department.,NA
+Lathrup Village,MI,Police,Lathrup Village Police Department,NA
+Suttons Bay,MI,Sheriff,Leelanau County Sheriff's Office,NA
+Adrian,MI,Sheriff,Lenawee County Sheriff's Office,NA
+Leslie,MI,Police,Leslie Police Department,NA
+Lincoln Park,MI,Police,Lincoln Park Police Department,NA
+Lincoln Township,MI,Police,Lincoln Township Police Department,NA
+Linden,MI,Police,Linden Police Department,NA
+Petoskey,MI,Police,Little Traverse Bay Bands of Odawa Indians Police Department,NA
+Livonia,MI,Police,Livonia Police Department,NA
+Lowell,MI,Police,Lowell Police Department,NA
+Newberry,MI,Sheriff,Luce County Sheriff's Office,NA
+Ludington,MI,Police,Ludington Police Department,NA
+Luna Pier,MI,Police,Luna Pier Police Department,NA
+Saint Ignace,MI,Sheriff,Mackinac County Sheriff's Office,NA
+Mackinac Island,MI,Police,Mackinac Island Police Department,NA
+Mackinaw City,MI,Police,Mackinaw City Police Department,NA
+Mount Clemens,MI,Sheriff,Macomb County Sheriff's Office,NA
+Manistee,MI,Sheriff,Manistee County Sheriff's Office,NA
+Manistee,MI,Police,Manistee Police Department,NA
+Manistique,MI,Police,Manistique Department Of Public Safety,NA
+Marine City,MI,Police,Marine City Police Department,NA
+Marquette,MI,Sheriff,Marquette County Sheriff's Office,NA
+Marquette,MI,Police,Marquette Police Department,NA
+Marshall,MI,Police,Marshall Police Department,NA
+Marysville,MI,Police,Marysville Police Department,NA
+Ludington,MI,Sheriff,Mason County Sheriff's Office,NA
+Mason,MI,Police,Mason Police Department,NA
+Big Rapids,MI,Sheriff,Mecosta County Sheriff's Office,NA
+Melvindale,MI,Police,Melvindale Police Department,NA
+Memphis,MI,Police,Memphis Police Department,NA
+Mendon,MI,Police,Mendon Police Department,NA
+Menominee,MI,Sheriff,Menominee County Sheriff's Office,NA
+Menominee,MI,Police,Menominee Police Department,NA
+Meridian Township,MI,Police,Meridian Township Police Department,NA
+Metamora Township,MI,Police,Metamora Township Police Department,NA
+Flint,MI,Police,Metro Police Authority Of Genesee County,NA
+East Lansing,MI,Police,Michigan State University Police and Public Safety,NA
+Midland,MI,Sheriff,Midland County Sheriff's Office,NA
+Midland,MI,Police,Midland Police Department,NA
+Milan,MI,Police,Milan Police Department,NA
+Milford,MI,Police,Milford Police Department,NA
+Lake City,MI,Sheriff,Missaukee County Sheriff's Office,NA
+Monroe,MI,Sheriff,Monroe County Sheriff's Office,NA
+Monroe,MI,Police,Monroe Police Department,NA
+Stanton,MI,Sheriff,Montcalm County Sheriff's Office,NA
+Atlanta,MI,Sheriff,Montmorency County Sheriff's Deparmtent,NA
+Montrose Township,MI,Police,Montrose Township Police Department,NA
+Morenci,MI,Police,Morenci Police Department,NA
+Mt. Morris,MI,Police,Mt. Morris Police Department,NA
+Mt. Morris Township,MI,Police,Mt. Morris Township Police Department,NA
+Muskegon,MI,Sheriff,Muskegon County Sheriff's Office,NA
+Muskegon Heights,MI,Police,Muskegon Heights Police Department,NA
+Muskegon,MI,Police,Muskegon Police Department,NA
+Nashville,MI,Police,Nashville Police Department,NA
+New Baltimore,MI,Police,New Baltimore Police Department,NA
+New Buffalo,MI,Police,New Buffalo Police Department,NA
+White Cloud,MI,Sheriff,Newaygo County Sheriff's Office,NA
+Newaygo,MI,Police,Newaygo Police Department,NA
+Niles,MI,Police,Niles Police Department,NA
+Dearborn,MI,Police,Norfolk Southern Railroad Police Department,NA
+North Muskegon,MI,Police,North Muskegon Police Department,NA
+Northville,MI,Police,Northville Police Department,NA
+Northville Township,MI,Police,Northville Township Police Department,NA
+Norton Shores,MI,Police,Norton Shores Police Department,NA
+Novi,MI,Police,Novi Police Department,NA
+Oak Park,MI,Police,Oak Park Department Of Public Safety,NA
+Pontiac,MI,Sheriff,Oakland County Sheriff's Office,NA
+Rochester,MI,Police,Oakland University Police Department,NA
+Hart,MI,Sheriff,Oceana County Sheriff's Office,NA
+West Branch,MI,Sheriff,Ogemaw County Sheriff's Office,NA
+Ontonagon,MI,Sheriff,Ontonagon County Sheriff's Office,NA
+Ontwa Township,MI,Police,Ontwa Township Edwardsburg Police Department,NA
+Orchard Lake Village,MI,Police,Orchard Lake Police Department,NA
+Reed City,MI,Sheriff,Osceola County Sheriff's Office,NA
+Oscoda Township,MI,Police,Oscoda Township Police Department,NA
+Gaylord,MI,Sheriff,Otsego County Sheriff's Office,NA
+Otsego,MI,Police,Otsego Police Department,NA
+Coopersville,MI,Sheriff,Ottawa County Sheriff's Office,NA
+Owosso,MI,Police,Owosso Police Department,NA
+Oxford,MI,Police,Oxford Police Department,NA
+Pentwater,MI,Police,Pentwater Police Department,NA
+Perry,MI,Police,Perry Police Department,NA
+Petoskey,MI,Police,Petoskey Department Of Public Safety,NA
+Pinckney,MI,Police,Pinckney Police Department,NA
+Pittsfield Township,MI,Police,Pittsfield Township Department Of Public Safety,NA
+Plymouth Township,MI,Police,Plymouth Township Police Department,NA
+Dowagiac,MI,Police,Pokagon Tribal Police Department,NA
+Port Huron,MI,Police,Port Huron Police Department,NA
+Portage,MI,Police,Portage Department Of Public Safety,NA
+Portland,MI,Police,Portland Police Department,NA
+Prairieville Township,MI,Police,Prairieville Township Police Department,NA
+Rogers City,MI,Sheriff,Presque Isle County Sheriff's Office,NA
+Quincy,MI,Police,Quincy Police Department,NA
+Reading,MI,Police,Reading Police Department,NA
+Redford Township,MI,Police,Redford Township Police Department,NA
+Reed City,MI,Police,Reed City Police Department,NA
+Richfield Township,MI,Police,Richfield Township Department Of Public Safety,NA
+Richfield Township,MI,Police,Richfield Township Police Department,NA
+Richland,MI,Police,Richland Police Department,NA
+Richland Township,MI,Police,Richland Township  Police Department,NA
+Richmond,MI,Police,Richmond Police Department,NA
+River Rouge,MI,Police,River Rouge Police Department,NA
+Riverview,MI,Police,Riverview Police Department,NA
+Rockford,MI,Police,Rockford Department Of Public Safety,NA
+Rockwood,MI,Police,Rockwood Police Department,NA
+Romulus,MI,Police,Romulus Police Department,NA
+Roosevelt Park,MI,Police,Roosevelt Park Police Department,NA
+Roscommon,MI,Sheriff,Roscommon County Sheriff's Office,NA
+Roseville,MI,Police,Roseville Police Department,NA
+Royal Oak,MI,Police,Royal Oak Police Department,NA
+Mt. Pleasant,MI,Police,Saginaw Chippewa Tribal Police Department,NA
+Saginaw,MI,Sheriff,Saginaw County Sheriff's Office,NA
+Saginaw,MI,Police,Saginaw Police Department,NA
+Saginaw Township,MI,Police,Saginaw Township Police Department,NA
+Frankenlust Township,MI,Police,Saginaw Valley State University Police Department,NA
+Saline,MI,Police,Saline Police Department,NA
+Sandusky,MI,Sheriff,Sanilac County Sheriff's Office,NA
+Sault Ste. Marie,MI,Police,Sault Ste. Marie Police Department,NA
+Manistique,MI,Sheriff,Schoolcraft County Sheriff's Department,NA
+Scottville,MI,Police,Scottville Police Department,NA
+Shelby Township,MI,Police,Shelby Township Police Department,NA
+Corunna,MI,Sheriff,Shiawassee County Sheriff's Office,NA
+Somerset Township,MI,Police,Somerset Township Police Department,NA
+South Rockwood,MI,Police,South Rockwood Police Department,NA
+Southfield,MI,Police,Southfield Police Department,NA
+Southgate,MI,Police,Southgate Police Department,NA
+Sparta,MI,Police,Sparta Police Department,NA
+Springport Township,MI,Police,Springport Township Police Department,NA
+St. Charles,MI,Police,St. Charles Police Department,NA
+Port Huron,MI,Sheriff,St. Clair County Sheriff's Office,NA
+St. Clair,MI,Police,St. Clair Police Department,NA
+St. Clair Shores,MI,Police,St. Clair Shores Police Department,NA
+St. Ignace,MI,Police,St. Ignace Police Department,NA
+St. Johns,MI,Police,St. Johns Police Department,NA
+Centreville,MI,Sheriff,St. Joseph County Sheriff's Office,NA
+St. Joseph,MI,Police,St. Joseph Department Of Public Safety,NA
+St. Joseph Township,MI,Police,St. Joseph Township Police Department,NA
+St. Louis,MI,Police,St. Louis Police Department,NA
+Sterling Heights,MI,Police,Sterling Heights Police Department,NA
+Sturgis,MI,Police,Sturgis Police Department,NA
+Sumpter Township,MI,Police,Sumpter Township Police Department,NA
+Sylvan Lake,MI,Police,Sylvan Lake Police Department,NA
+Tawas City,MI,Police,Tawas City Police Authority,NA
+Taylor,MI,Police,Taylor Police Department,NA
+Tecumseh,MI,Police,Tecumseh Police Department,NA
+Thomas Township,MI,Police,Thomas Township Police Department,NA
+Three Rivers,MI,Police,Three Rivers Police Department,NA
+Tittabawassee Township,MI,Police,Tittabawassee Township Police,NA
+Traverse City,MI,Police,Traverse City Police Department,NA
+Trenton,MI,Police,Trenton Police Department,NA
+Troy,MI,Police,Troy Police Department,NA
+Tuscarora Township,MI,Police,Tuscarora Township Police Department,NA
+Caro,MI,Sheriff,Tuscola County Sheriff's Office,NA
+Unadilla Township,MI,Police,Unadilla Township Police Department,NA
+Union City,MI,Police,Union City Police Department,NA
+Ann Arbor,MI,Police,University Of Michigan Department of Public Safety,NA
+Ann Arbor,MI,Police,University Of Michigan Department of Public Safety,NA
+Utica,MI,Police,Utica Police Department,NA
+Paw Paw,MI,Sheriff,Van Buren County Sheriff's Office,NA
+Walker,MI,Police,Walker Police Department,NA
+Warren,MI,Police,Warren Police Department,NA
+Ann Arbor,MI,Police,Washtenaw Community College Department of Public Safety,NA
+Ann Arbor,MI,Sheriff,Washtenaw County Sheriff's Office,NA
+Watersmeet,MI,Police,Watersmeet Police Department,NA
+Wayland,MI,Police,Wayland Police Department,NA
+Detroit,MI,Police,Wayne County Airport Police Department,NA
+Detroit,MI,Sheriff,Wayne County Sheriff's Office,NA
+Wayne,MI,Police,Wayne Police Department,NA
+Detroit,MI,Police,Wayne State University Police,NA
+West Bloomfield Township,MI,Police,West Bloomfield Township Police Department,NA
+Kalamazoo,MI,Police,Western Michigan University Police Department,NA
+Westland,MI,Police,Westland Police Department,NA
+Cadillac,MI,Sheriff,Wexford County Sheriff's Office,NA
+White Lake Township,MI,Police,White Lake Township Police Department,NA
+White Pigeon,MI,Police,White Pigeon Police Department,NA
+Whitehall,MI,Police,Whitehall Police Department,NA
+Williamston,MI,Police,Williamston Police Department,NA
+Wixom,MI,Police,Wixom Police Department,NA
+Wolverine Lake,MI,Police,Wolverine Lake Police Department,NA
+Woodhaven,MI,Police,Woodhaven Police Department,NA
+Woodland Township,MI,Police,Woodland Township Police Department,NA
+Wyandotte,MI,Police,Wyandotte Police Department,NA
+Wyoming,MI,Police,Wyoming Police Department,NA
+Yale,MI,Police,Yale Police Department,NA
+Zeeland,MI,Police,Zeeland Police Department,NA
+Zilwaukee,MI,Police,Zilwaukee Police Department,NA
+Allegan,MI,Police,Allegan City Police Department,NA
+Bay City,MI,Sheriff,Bay County Sheriff’s Office,NA
+Big Rapids,MI,Police,Big Rapids Department of Public Safety,NA
+Canton Township,MI,Police,Canton Police Department,NA
+Davison Township,MI,Police,Davison Township Police Department,NA
+Dearborn,MI,Police,Dearborn Police Department,NA
+DeWitt Township,MI,Police,DeWitt Township Police Department,NA
+Grayling,MI,Police,Grayling Police Department,NA
+Highland Park,MI,Police,Highland Park Police Department,NA
+Lansing,MI,Police,Lansing Police Department,NA
+Lapeer,MI,Sheriff,Lapeer County Sheriff’s Office,NA
+Howell,MI,Sheriff,Livingston County Sheriff’s Office,NA
+Mt. Pleasant,MI,Police,Mt. Pleasant Police Department,NA
+Potterville,MI,Police,Potterville Police Department,NA

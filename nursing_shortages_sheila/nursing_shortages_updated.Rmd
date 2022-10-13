@@ -1,0 +1,92 @@
+---
+title: "nursing_homes_updated"
+output: html_document
+date: '2022-07-25'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(tidycensus)
+library(ggplot2)
+library(sf)
+library(lubridate)
+library(magrittr)
+install.packages("magrittr")
+
+
+```
+
+
+
+```{r}
+
+nursing_shortages_national <- read_csv("nursing_homes_07_10.csv")
+
+nursing_shortages_national %<>% clean_names()
+
+nursing_shortages_national %<>% 
+  mutate(week_ending = as.Date(week_ending)) %>%
+  mutate(year = year(week_ending)) 
+
+nursing_shortages_national[is.na(nursing_shortages_national)] <- ""
+
+nursing_shortages_national <- sapply(nursing_shortages_national, as.character)
+nursing_shortages_national[is.na(nursing_shortages_national)] <- ""
+as_tibble(nursing_shortages_national)
+
+resident_covid <- nursing_shortages_national %>%
+  select(week_ending, provider_name, provider_city, provider_state, residents_weekly_confirmed_covid_19)
+
+staff_covid <- nursing_shortages_national %>%
+  select(week_ending, provider_name, provider_city, provider_state, staff_weekly_confirmed_covid_19)
+
+resident_covid_clean <- resident_covid %>%
+  filter(residents_weekly_confirmed_covid_19 != "NA")
+
+staff_covid_clean <- staff_covid %>%
+  filter(staff_weekly_confirmed_covid_19 != "NA")
+
+agg_covid_res <- resident_covid_clean %>%
+  group_by(week_ending) %>%
+  summarise(sum(residents_weekly_confirmed_covid_19))
+
+agg_covid_staff <- staff_covid_clean %>%
+  group_by(week_ending) %>%
+  summarise(sum(staff_weekly_confirmed_covid_19))
+
+write_csv(agg_covid_res, "residential_covid_weekly.csv")
+write_csv(agg_covid_staff, "staff_covid_weekly.csv")
+
+georgia_res <- resident_covid_clean %>%
+  filter(provider_state == "GA")
+
+georgia_staff <- staff_covid_clean %>%
+  filter(provider_state == "GA")
+
+agg_georgia_res <- georgia_res %>%
+  group_by(week_ending) %>%
+  summarise(sum(residents_weekly_confirmed_covid_19))
+
+agg_georgia_staff <- georgia_staff %>%
+  group_by(week_ending) %>%
+  summarise(sum(staff_weekly_confirmed_covid_19))
+
+write_csv(agg_georgia_res, "georgia_res_covid_weekly.csv")
+write_csv(agg_georgia_staff, "georgia_staff_covid_weekly.csv")
+
+```
+
+
+

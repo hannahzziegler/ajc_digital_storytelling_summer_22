@@ -1,0 +1,66 @@
+---
+title: "nursing_home_shortages"
+output: html_document
+date: '2022-06-15'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(rvest)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r}
+
+state_by_state_nursing_homes <- read_csv("nursing_shortages/state_by_state_nursing_shortage.csv")
+
+state_by_state_nursing_homes %>%
+  group_by(provider_state) %>%
+  arrange(desc(shortage))
+  
+
+```
+
+Let's go scrape some tables!
+
+*** also looking for percent of all of the homes in georgia that have staff shortage ***
+
+```{r}
+
+shortage_data <- read_html("https://data.cms.gov/covid-19/covid-19-nursing-home-data/data")
+
+tables <- shortage_data %>% html_table()
+
+all_georgia_data <- read_csv("georgia_nurse_shortages.csv")
+
+georgia_shortages_clean <- all_georgia_data %>%
+  filter(`Shortage of Nursing Staff` == "Y") %>%
+  select(`Week Ending`, `Shortage of Nursing Staff`, `Provider City`, `Provider Name`) 
+
+georgia_shortages_clean %>%
+  group_by(`Week Ending`) %>%
+  summarize(count = n()) %>%
+  arrange(desc(count))
+
+write_csv(georgia_shortages_clean, "")
+
+```
+
+
+

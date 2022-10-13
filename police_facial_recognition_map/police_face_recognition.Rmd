@@ -1,0 +1,56 @@
+---
+title: "face_recognition"
+output: html_document
+date: '2022-06-24'
+---
+
+```{r setup, include=FALSE}
+
+library(tidyverse)
+library(janitor)
+library(tidycensus)
+library(ggplot2)
+library(sf)
+
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+
+# For summaries of only police agencies using facial recognition
+
+all_face_recognition <- read_csv("face_recognition.csv")
+
+police_sheriff_face_recognition <- all_face_recognition %>%
+  filter(`Type of LEA` == "Police" | `Type of LEA` == "Sheriff" | `Type of LEA` == "State Police") %>%
+  select(City, State, `Type of LEA`, Agency, Vendor) 
+
+police_sheriff_face_recognition <- paste(police_sheriff_face_recognition$City, police_sheriff_face_recognition$State)
+
+
+write_csv(police_sheriff_face_recognition,"police_sheriff_face_recognition.csv")
+
+# For cloropleth summaries of each state
+
+facial_recognition_summaries <- police_sheriff_face_recognition %>%
+  group_by(State) %>%
+  summarise(count = n()) 
+
+write_csv(facial_recognition_summaries,"summaries_facial_recognition.csv")
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

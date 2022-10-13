@@ -1,0 +1,73 @@
+---
+title: "nursing_updates"
+output: html_document
+date: '2022-06-30'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(tidycensus)
+library(ggplot2)
+library(sf)
+library(lubridate)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+
+nurses_updated <- read_csv("updated_nurses.csv")
+
+cumulative_nurses <- nurses_updated %>% janitor::clean_names()
+
+cumulative_nurses[is.na(cumulative_nurses)] <- ""  
+
+clean_nurses <- cumulative_nurses %>%
+  mutate(week_ending = as.Date(week_ending)) %>%
+  mutate(year = year(week_ending)) 
+
+final_nurses <- clean_nurses %>%
+  group_by(week_ending) %>% 
+  summarize(count_all_facilities_in_georgia=n(), facilities_short_nurses=sum(shortage_of_nursing_staff=="Y"), facilities_not_short_nurses=sum(shortage_of_nursing_staff=="N"), facilities_no_answer_on_nursing_shortage=sum(shortage_of_nursing_staff=="")) %>% mutate(pct_with_shortage=((facilities_short_nurses/count_all_facilities_in_georgia)*100)) %>%
+  select(week_ending, pct_with_shortage)
+
+ga_tracker_fever_line <- ggplot(data=final_nurses, aes(x=week_ending, y=pct_with_shortage, group=1)) + geom_line(color="red") + geom_point() +labs(title = "Share of Georgia nursing homes reporting nursing shortages", subtitle = str_wrap("Subtitle text here. Federal dataset begins in May 2020, after pandemic had already begun. Not all facilities answer question regarding nursing or other staff shortages.",75), caption = "This is a graphic caption. Data analysis by Jennifer Peebles-AJC", x = "Week ending", y = "Percentage") +  theme(axis.text.x=element_text(color = "black", size=7, angle=90, vjust=.8, hjust=0.8)) 
+
+ga_tracker_fever_line
+
+
+nurses_updated_2 <- read_csv("06_19_22.csv")
+
+nurses_updated_2 <- nurses_updated_2 %>% janitor::clean_names()
+
+nurses_updated_2 %>%
+  summarise(count_all_facilities_in_georgia=n()) %>%
+  mutate(facilities_short_nurses=sum(shortage_of_nursing_staff=="Y")) %>%
+  mutate(pct_with_shortage=((facilities_short_nurses/count_all_facilities_in_georgia)*100)) %>%
+  select(week_ending, pct_with_shortage)
+
+nurses_updated_2 %>%
+  group_by(shortage_of_nursing_staff) %>%
+  summarise(count = sum(shortage_of_nursing_staff=="Y"))
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+

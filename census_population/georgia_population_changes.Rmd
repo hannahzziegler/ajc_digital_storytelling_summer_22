@@ -1,0 +1,174 @@
+---
+title: "georgia_population_analysis"
+output: html_document
+date: '2022-07-01'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Load Packages and Data
+
+```{r}
+
+library(tidyverse)
+library(janitor)
+library(tidycensus)
+library(ggplot2)
+library(sf)
+
+## There are 538 rows in this dataframe. Each row is one incorporated city or town in the state of Georgia. 
+
+georgia_populations <- read_csv("georgia_city_population_estimates.csv")
+
+## Fixing the numbers!
+
+georgia_populations <- georgia_populations %>% 
+  mutate(april_2020_base_estimate = as.numeric(april_2020_base_estimate)) %>%
+  mutate(population_2020 = as.numeric(population_2020)) %>%
+  mutate(population_2021 = as.numeric(population_2021)) %>%
+  distinct()
+
+## Separating cities and towns -- 428 cities and 109 towns
+
+georgia_towns <- georgia_populations %>%
+  filter(str_detect(geographic_area, 'town'))
+
+georgia_cities <- georgia_populations %>%
+  filter(str_detect(geographic_area, 'city'))
+
+## Cleaning the city and town names for general dataframe 
+
+library(stringr)
+
+georgia_populations <- georgia_populations %>%
+  mutate_at("geographic_area", str_replace, " city,", ",") %>%
+  mutate_at("geographic_area", str_replace, " town,", ",")
+
+## Finding percent change in population for each big-ish city and town -- There are 299 Georgia cities/towns that have a population of more than 1000 people
+
+populations_over_1000_pct_change <- georgia_populations %>%
+  filter(population_2020 > 1000) %>%
+  mutate(percent_change = ((population_2021-population_2020)/population_2020)*100) %>%
+  arrange(desc(percent_change))
+
+all_populations_pct_change <- georgia_populations %>%
+  mutate(percent_change = ((population_2021-population_2020)/population_2020)*100) %>%
+  arrange(desc(percent_change))
+
+write_csv(populations_over_1000_pct_change, "georgia_city_percent_change.csv")
+
+```
+
+
+## Let's look at the age changes that Georgia has experienced in the last year
+
+
+```{r}
+
+county_ages <- read_csv("age_race_sex/median_ages.csv") %>%
+  clean_names()
+
+county_ages_2020 <- county_ages %>%
+  filter(year == 2)
+
+county_ages_2021 <- county_ages %>%
+  filter(year == 3)
+
+year_over_year_ages <- county_ages_2020 %>% left_join(county_ages_2021, by=c("ctyname")) %>%
+  rename(median_2021 = median_age_tot.y) %>%
+  rename(median_2020 = median_age_tot.x) %>%
+  rename("2020" = year.x) %>%
+  rename("2021" = year.y) %>%
+  select(ctyname, median_2020, median_2021)
+
+year_over_year_ages <- year_over_year_ages %>%
+  mutate(change_in_median = (median_2021-median_2020)) 
+
+year_over_year_ages <- year_over_year_ages %>%
+  mutate_at("ctyname", str_replace, " County", "")
+
+year_over_year_ages %>%
+  arrange(median_2021)
+
+year_over_year_ages
+
+```
+
+## Now, let's look at the kids data breakdown
+
+
+```{r}
+
+county_by_county_age <- read_csv("age_race_sex/cc-est2021-agesex-13.csv")
+
+county_kids_2020 <- county_by_county_age %>%
+  filter(YEAR == 2) %>%
+  select(STNAME, CTYNAME, YEAR, POPESTIMATE, UNDER5_TOT, AGE513_TOT, AGE1417_TOT)
+
+county_kids_2020 %>%
+  mutate(total_kids = sum(UNDER5_TOT, AGE513_TOT, AGE1417_TOT))
+
+county_kids_2021 <- county_by_county_age %>%
+  filter(YEAR == 3) %>%
+  select(STNAME, CTYNAME, YEAR, POPESTIMATE, UNDER5_TOT, AGE513_TOT, AGE1417_TOT)
+
+kids_2020 <- read_csv("age_race_sex/georgia_kids_2020.csv")
+
+kids_2021 <- read_csv("age_race_sex/georgia_kids_2021.csv")
+
+kids_20_21 <- kids_2020 %>% left_join(kids_2021, by=c("CTYNAME")) %>%
+  select(CTYNAME, TOTAL_KIDS, TOTAL_KIDS_2021)
+
+kids_20_21 %>%
+  mutate(percent_change = ((TOTAL_KIDS_2021-TOTAL_KIDS)/TOTAL_KIDS)*100) %>%
+  arrange(desc(percent_change))
+
+## Fulton saw a 1.36% decrease in kids. DeKalb saw a 2.24% decrease in kids. Cobb saw a 1.72% decrease in kids. Gwinnett saw a .7% decrease and 
+
+## Roughly half of Georgia's counties (88) saw decreases in the number of children in the last year. This includes decreases among all five core counties. 
+
+```
+
+## Let's scoop out our demographic data to make a cool chart!
+
+```{r}
+
+demographic_georgia <- read_csv("race_age_couties.csv")
+
+metro_atlanta_counties <- demographic_georgia %>%
+  filter(CTYNAME == "Fulton County" | CTYNAME == "DeKalb County" | CTYNAME == "Gwinnett County" | CTYNAME == "Clayton County" | CTYNAME == "Cobb County") %>%
+  filter(YEAR == 2 | YEAR == 3) %>%
+  filter(AGEGRP == 0)
+
+metro_atlanta_2020 <- metro_atlanta_counties %>%
+  filter(YEAR == 2)
+
+metro_atlanta_2021 <- metro_atlanta_counties %>%
+  filter(YEAR == 3)
+
+metro_atlanta_2020 <- metro_atlanta_2020 %>%
+  mutate(white_pct = ((WA_MALE + WA_FEMALE)/TOT_POP)*100) %>%
+  mutate(black_pct = ((BA_MALE + BA_FEMALE)/TOT_POP)*100) %>%
+  mutate(asian_pct = ((AA_MALE + AA_FEMALE)/TOT_POP)*100) %>%
+  mutate(asian_pct = ((H_MALE + H_FEMALE)/TOT_POP)*100) %>% 
+  mutate(native_pct = ((IA_MALE + IA_FEMALE)/TOT_POP)*100) %>%
+  mutate(pacific_islander_pct = ((NA_MALE + NA_FEMALE)/TOT_POP)*100) %>%
+  mutate(two_or_more_pct = ((TOM_MALE + TOM_FEMALE)/TOT_POP)*100)
+
+metro_atlanta_2021 %>%
+  mutate(white_pct = ((WA_MALE + WA_FEMALE)/TOT_POP)*100) %>%
+  mutate(black_pct = ((BA_MALE + BA_FEMALE)/TOT_POP)*100) %>%
+  mutate(asian_pct = ((AA_MALE + AA_FEMALE)/TOT_POP)*100) %>%
+  mutate(hispanic_pct = ((H_MALE + H_FEMALE)/TOT_POP)*100) %>% 
+  mutate(native_pct = ((IA_MALE + IA_FEMALE)/TOT_POP)*100) %>%
+  mutate(pacific_islander_pct = ((NA_MALE + NA_FEMALE)/TOT_POP)*100) %>%
+  mutate(two_or_more_pct = ((TOM_MALE + TOM_FEMALE)/TOT_POP)*100)
+
+write_csv(metro_atlanta_2020, "race_2020.csv")
+write_csv(metro_atlanta_2021, "race_2021.csv")
+
+```
+
+

@@ -1,0 +1,99 @@
+---
+title: "sam data"
+output: html_document
+date: '2022-07-11'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+
+library(tidyverse)
+library(lubridate)
+library(janitor)
+install.packages("plyr")
+library(plyr)
+library(dplyr)
+
+tempdatadaily <- read_csv("TempDataDaily.csv")
+
+tempdatadaily <- tempdatadaily %>%
+  separate(DATE, sep="-", into = c("year", "month", "day"))
+
+tempdatadaily %>%
+  group_by(NAME) %>%
+  summarise(count = n())
+
+atlanta <- tempdatadaily %>%
+  filter(NAME == "ATLANTA HARTSFIELD JACKSON INTERNATIONAL AIRPORT, GA US" & year == 1930)
+
+## Export to Excel to see if it is accurate average data based on double checking in both programs.
+
+write_csv(atlanta, "atlanta.csv")
+
+atlanta_yearly_average = aggregate(TMAX ~ year, data=atlanta, mean)
+
+clayton <- tempdatadaily %>%
+  filter(NAME == "CLAYTON 1 SSW, GA US") %>%
+
+clayton_yearly_average <- aggregate(TMAX ~ year, data=clayton, mean)
+
+gainesville <- tempdatadaily %>%
+  filter(NAME == "GAINESVILLE, GA US")
+
+gainesville_yearly_average <- aggregate(TMAX ~ year, data=gainesville, mean)
+
+hawkinsville <- tempdatadaily %>%
+  filter(NAME == "HAWKINSVILLE, GA US")
+
+hawkinsville_yearly_average <- aggregate(TMAX ~ year, data=hawkinsville, mean)
+
+talbotton <- tempdatadaily %>%
+  filter(NAME == "TALBOTTON, GA US")
+
+talbotton_yearly_average <- aggregate(TMAX ~ year, data=talbotton, mean)
+
+## Trying a different method for Rome to see what's going on with the outliers in Sam's visualization
+
+rome <- tempdatadaily %>%
+  filter(NAME == "ROME, GA US")
+
+ddply(rome, .(NAME, year), summarise,
+      mean_TMAX = mean(TMAX, na.rm = TRUE))
+
+rome_daily_average <- aggregate(TMAX ~ year, data=rome, mean, na.rm = TRUE)
+
+louisville <- tempdatadaily %>%
+  filter(NAME == "LOUISVILLE 1 E, GA US")
+
+## What's up with the Louisville 1926 crazy outlier (update: there is only data for August from this year)
+
+louis_1926 <- louisville %>%
+  filter(year == 1926)
+
+louisville_daily_average <- aggregate(TMAX ~ year, data=louisville, mean)
+
+## Let's smack them all together t
+
+combined_1 <- gainesville_yearly_average %>% left_join(clayton_yearly_average, by=c("year")) 
+
+combined_2 <- combined_1 %>% left_join(talbotton_yearly_average, by=c("year")) 
+
+combined_3 <- combined_2 %>% left_join(rome_daily_average, by=c("year"))
+
+combined_4 <- combined_3 %>% left_join(louisville_daily_average, by=c("year"))
+
+combined_5 <- combined_4 %>% left_join(atlanta_yearly_average, by=c("year"))
+
+
+```
+
+

@@ -1,0 +1,76 @@
+---
+title: "cleaning_code_violations"
+output: html_document
+date: '2022-06-21'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+
+library(rgdal)
+library(tidyverse)
+library(janitor)
+library(tidycensus)
+library(ggplot2)
+library(sf)
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+
+sandy_springs_cleaning <- read_csv("sandy_springs_code.csv")
+
+clean_property <- sandy_springs_cleaning %>%
+  mutate(`Case Type` = case_when(
+    `Case Type` == "Property" ~ "Property Maintenance",
+    TRUE ~ `Case Type`
+  ))
+
+clean_assigned <- clean_property %>%
+  mutate(`Assigned To` = case_when(
+    `Assigned To` == "Marcellus" ~ "Marcellus Hampton",
+    `Assigned To` == "Shane" ~ "Shane Peeples",
+    `Assigned To` == "Jennifer" ~ "Jennifer Lee",
+    `Assigned To` == "Paula" ~ "Paula Allen",
+    `Assigned To` == "Kenneth" ~ "Kenneth Brown",
+    TRUE ~ `Assigned To`
+  ))
+
+desired_case_types <- clean_assigned %>%
+  filter(`Case Type` == "Property Maintenance" | `Case Type` == "Grass and Weeds" | `Case Type` == "Trash/Debris")
+
+cleaned_names <- desired_case_types %>%
+  rename("main_address" = "...5") %>%
+  rename("parcel" = "...9") %>%
+  rename("assigned_to" = "Assigned To") %>%
+  rename("district" = "District") %>%
+  rename("case_status" = "Case Status") %>%
+  rename("case_type" = "Case Type") %>%
+  rename("case_number" = "Case #") 
+
+final_df <- cleaned_names %>%
+  select(case_number, case_type, case_status, district, main_address, parcel, assigned_to, `Opened
+Date`, `Closed
+Date`) 
+  
+final_df[is.na(final_df)] <- ""
+
+write_csv(final_df,"sandy_springs_code_enforcement_clean.csv")
+  
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
